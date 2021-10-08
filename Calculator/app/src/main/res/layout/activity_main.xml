@@ -8,8 +8,9 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -22,28 +23,31 @@
                 android:id="@+id/limpiarBTN"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
+                android:layout_weight="1"
                 android:text="@string/limpiar"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/parentesisBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/parentesis"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/exponenteBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/exponente"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/divisionBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/division"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
@@ -54,29 +58,33 @@
 
             <Button
                 android:id="@+id/sieteBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/siete"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/ochoBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/ocho"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/nueveBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/nueve"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/multiplicacionBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/multiplicacion"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
@@ -87,29 +95,33 @@
 
             <Button
                 android:id="@+id/cuatroBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/cuatro"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/cincoBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/cinco"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/seisBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/seis"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/restaBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/resta"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
@@ -120,29 +132,33 @@
 
             <Button
                 android:id="@+id/unoBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/uno"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/dosBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/dos"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/tresBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/tres"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/sumaBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/suma"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -154,40 +170,47 @@
 
             <Button
                 android:id="@+id/plusMinusBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/plusMinus"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/ceroBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/cero"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/puntoBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/punto"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
             <Button
                 android:id="@+id/igualBTN"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/igual"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
     </TableLayout>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/input"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
         android:text="Ingrese un valor"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -198,9 +221,9 @@
 
     <Button
         android:id="@+id/espacioBTN"
+        android:theme="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="@string/espacio"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"

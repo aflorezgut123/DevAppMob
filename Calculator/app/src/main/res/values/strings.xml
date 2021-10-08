@@ -23,7 +23,7 @@
      <string name="punto">.</string>
      <string name="igual">=</string>
 
-     <string name="espacio"> </string>
+     <string name="espacio">Delete </string>
 
      <string name="display">Ingrese un valor</string>
 </resources>
