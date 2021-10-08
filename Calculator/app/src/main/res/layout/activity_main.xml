@@ -39,7 +39,11 @@
                 android:id="@+id/exponenteBTN"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+
                 android:layout_weight="1"
+
+                android:onClick="exponenteBTN"
+
                 android:text="@string/exponente"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -48,6 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="divisionBTN"
                 android:text="@string/division"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
@@ -61,6 +66,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="sieteBTN"
                 android:text="@string/siete"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -69,6 +75,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="ochoBTN"
                 android:text="@string/ocho"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -77,6 +84,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="nueveBTN"
                 android:text="@string/nueve"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -85,6 +93,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="multiplicacionBTN"
                 android:text="@string/multiplicacion"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
@@ -98,6 +107,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="cuatroBTN"
                 android:text="@string/cuatro"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -106,6 +116,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="cincoBTN"
                 android:text="@string/cinco"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -114,6 +125,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="seisBTN"
                 android:text="@string/seis"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -122,6 +134,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="restaBTN"
                 android:text="@string/resta"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
@@ -135,6 +148,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="unoBTN"
                 android:text="@string/uno"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -143,6 +157,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="dosBTN"
                 android:text="@string/dos"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -151,6 +166,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="tresBTN"
                 android:text="@string/tres"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -159,6 +175,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="sumaBTN"
                 android:text="@string/suma"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -181,6 +198,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="zeroBTN"
                 android:text="@string/cero"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -189,6 +207,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="puntoBTN"
                 android:text="@string/punto"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -197,33 +216,39 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="igualBTN"
                 android:text="@string/igual"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
     </TableLayout>
 
-    <TextView
+    <EditText
         android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
+        android:autofillHints="false"
+        android:inputType="none"
         android:text="Ingrese un valor"
         android:textAlignment="textEnd"
-        android:textSize="34sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101"
-        app:layout_goneMarginTop="30dp" />
+        app:layout_goneMarginTop="30dp"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/espacioBTN"
         android:theme="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="borrarBTN"
         android:text="@string/espacio"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
