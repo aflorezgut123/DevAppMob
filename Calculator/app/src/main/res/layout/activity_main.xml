@@ -26,7 +26,8 @@
                 android:layout_weight="1"
                 android:onClick="limpiarBTN"
                 android:text="@string/limpiar"
-                android:theme="@style/Widget.AppCompat.Button.Borderless" />
+                android:theme="@style/Widget.AppCompat.Button.Borderless"
+                android:backgroundTint="#F44336"/>
 
             <Button
                 android:id="@+id/parentesisBTN"
@@ -221,7 +222,8 @@
                 android:layout_weight="1"
                 android:onClick="igualBTN"
                 android:text="@string/igual"
-                android:theme="@style/Widget.AppCompat.Button.Borderless" />
+                android:theme="@style/Widget.AppCompat.Button.Borderless"
+                android:backgroundTint="#4CAF50"/>
         </TableRow>
     </TableLayout>
 
@@ -245,16 +247,17 @@
         app:layout_goneMarginTop="30dp"
         tools:ignore="LabelFor" />
 
-    <Button
+    <ImageButton
         android:id="@+id/espacioBTN"
-        android:theme="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFC107"
         android:onClick="borrarBTN"
-        android:text="@string/espacio"
+        android:theme="@style/Widget.AppCompat.Button.Borderless"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backspace" />
 </android.support.constraint.ConstraintLayout>
