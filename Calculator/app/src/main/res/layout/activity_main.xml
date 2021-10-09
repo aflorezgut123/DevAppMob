@@ -24,6 +24,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="limpiarBTN"
                 android:text="@string/limpiar"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -32,6 +33,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="parentesisBTN"
                 android:text="@string/parentesis"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 
@@ -190,6 +192,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="plusMinusBTN"
                 android:text="@string/plusMinus"
                 android:theme="@style/Widget.AppCompat.Button.Borderless" />
 

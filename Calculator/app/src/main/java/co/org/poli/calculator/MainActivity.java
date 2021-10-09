@@ -1,9 +1,9 @@
 package co.org.poli.calculator;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableStringBuilder;
+import android.view.View;
 import android.widget.EditText;
 import org.mariuszgromada.math.mxparser.*;
 
@@ -107,11 +107,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void limpiarBTN(View view){
-
+        display.setText("");
     }
 
     public void parentesisBTN(View view){
+        int posCursor = display.getSelectionStart();
+        int iniciaParentesis = 0;
+        int cierraParentesis = 0;
+        int textLen = display.getText().length();
+        for (int i = 0; i < posCursor; i++){
+            if (display.getText().toString().substring(i, i+1).equals("(")){
+                iniciaParentesis += 1;
+            }
+            if (display.getText().toString().substring(i, i+1).equals(")")){
+                cierraParentesis += 1;
+            }
+        }
 
+        if (iniciaParentesis == cierraParentesis || display.getText().toString().substring(textLen-1, textLen).equals("(")) {
+            actualizarTexto("(");
+            display.setSelection(posCursor + 1);
+        }
+        if (cierraParentesis < iniciaParentesis && !display.getText().toString().substring(textLen-1, textLen).equals("(")) {
+            actualizarTexto(")");
+        }
+        display.setSelection(posCursor + 1);
     }
 
     public void sieteBTN(View view){
@@ -139,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void plusMinusBTN(View view){
-
+        actualizarTexto("-");
     }
 
     public void zeroBTN(View view){
